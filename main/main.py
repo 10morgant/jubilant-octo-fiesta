@@ -378,8 +378,8 @@ def collect(
     # InfluxDB connection
     influx_url:    InfluxUrlOpt    = "http://localhost:8086",
     influx_token:  InfluxToken     = None,   # type: ignore[assignment]  prompted if absent
-    influx_org:    InfluxOrgOpt    = "my-org",
-    influx_bucket: InfluxBucketOpt = "vsphere_metrics",
+    influx_org:    InfluxOrgOpt    = "vm_perf",
+    influx_bucket: InfluxBucketOpt = "vm_perf",
 
     # Collection behaviour
     interval: Annotated[int, typer.Option(
